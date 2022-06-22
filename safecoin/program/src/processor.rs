@@ -1,21 +1,21 @@
 //! Program state processor
 
 use crate::state::Transitionable;
-use solana_gateway::error::GatewayError;
-use solana_gateway::instruction::{GatewayInstruction, NetworkFeature};
-use solana_gateway::state::{
+use safecoin_gateway::error::GatewayError;
+use safecoin_gateway::instruction::{GatewayInstruction, NetworkFeature};
+use safecoin_gateway::state::{
     get_expire_address_with_seed, get_gatekeeper_address_with_seed,
     get_gateway_token_address_with_seed, verify_gatekeeper, AddressSeed, GatewayTokenAccess,
     GatewayTokenState, InPlaceGatewayToken, GATEKEEPER_ADDRESS_SEED, GATEWAY_TOKEN_ADDRESS_SEED,
     NETWORK_EXPIRE_FEATURE_SEED,
 };
-use solana_gateway::Gateway;
-use solana_program::clock::{Clock, UnixTimestamp};
+use safecoin_gateway::Gateway;
+use safecoin_program::clock::{Clock, UnixTimestamp};
 use {
     crate::id,
     borsh::{BorshDeserialize, BorshSerialize},
-    solana_gateway::{borsh::get_instance_packed_len, state::GatewayToken},
-    solana_program::{
+    safecoin_gateway::{borsh::get_instance_packed_len, state::GatewayToken},
+    safecoin_program::{
         account_info::{next_account_info, AccountInfo},
         entrypoint::ProgramResult,
         msg,
@@ -412,7 +412,7 @@ fn add_feature_to_network(accounts: &[AccountInfo], feature: NetworkFeature) -> 
             ] as &[&[u8]];
 
             invoke_signed(
-                &solana_program::system_instruction::create_account(
+                &safecoin_program::system_instruction::create_account(
                     funder_account.key,
                     feature_account.key,
                     1.max(Rent::default().minimum_balance(0)),

@@ -1,7 +1,7 @@
 import { Command } from "@oclif/core";
 import * as Flags from "../lib/flags";
 import { Config } from "../service/config";
-import { Connection } from "@solana/web3.js";
+import { Connection } from "@safecoin/web3.js";
 
 export default abstract class Base extends Command {
   protected _config: Config | undefined;

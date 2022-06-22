@@ -19,10 +19,10 @@ use crate::{
     state::{GatewayToken, GatewayTokenState},
 };
 use num_traits::AsPrimitive;
-use solana_program::entrypoint_deprecated::ProgramResult;
-use solana_program::program::invoke_unchecked;
-use solana_program::program_error::ProgramError;
-use solana_program::{account_info::AccountInfo, msg, pubkey::Pubkey};
+use safecoin_program::entrypoint_deprecated::ProgramResult;
+use safecoin_program::program::invoke_unchecked;
+use safecoin_program::program_error::ProgramError;
+use safecoin_program::{account_info::AccountInfo, msg, pubkey::Pubkey};
 use std::str::FromStr;
 
 // Session gateway tokens, that have a lamport balance that exceeds this value, are rejected

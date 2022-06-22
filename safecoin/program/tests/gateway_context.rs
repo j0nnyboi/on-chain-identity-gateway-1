@@ -1,13 +1,13 @@
-use solana_gateway::instruction::GatewayInstruction;
-use solana_gateway::state::{
+use safecoin_gateway::instruction::GatewayInstruction;
+use safecoin_gateway::state::{
     get_gatekeeper_address_with_seed, get_gateway_token_address_with_seed, GatewayToken,
     GatewayTokenState,
 };
-use solana_gateway::{borsh as program_borsh, instruction};
-use solana_gateway_program::{id, processor::process_instruction};
-use solana_program::{pubkey::Pubkey, system_program, sysvar};
-use solana_program_test::{processor, ProgramTest, ProgramTestContext};
-use solana_sdk::{
+use safecoin_gateway::{borsh as program_borsh, instruction};
+use safecoin_gateway_program::{id, processor::process_instruction};
+use safecoin_program::{pubkey::Pubkey, system_program, sysvar};
+use safecoin_program_test::{processor, ProgramTest, ProgramTestContext};
+use safecoin_sdk::{
     clock::UnixTimestamp,
     instruction::{AccountMeta, Instruction},
     signature::Keypair,
@@ -19,7 +19,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 
 fn program_test() -> ProgramTest {
     ProgramTest::new(
-        "solana_gateway_program",
+        "safecoin_gateway_program",
         id(),
         processor!(process_instruction),
     )

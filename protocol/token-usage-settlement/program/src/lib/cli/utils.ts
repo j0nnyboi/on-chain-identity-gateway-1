@@ -6,7 +6,7 @@ import { ExtendedCluster, getClusterUrl } from "../util";
 
 const WALLET_PATH =
   process.env.USAGE_WALLET ||
-  path.join(os.homedir(), ".config", "solana", "id.json");
+  path.join(os.homedir(), ".config", "safecoin", "id.json");
 const DEFAULT_COMMITMENT: web3.Commitment = "confirmed";
 
 export const getKeypair = (): web3.Keypair =>

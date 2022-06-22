@@ -2,7 +2,7 @@ import {
   getPythProgramKeyForCluster,
   PythConnection,
 } from "@pythnetwork/client";
-import { clusterApiUrl, Connection } from "@solana/web3.js";
+import { clusterApiUrl, Connection } from "@safecoin/web3.js";
 
 const connection = new Connection(clusterApiUrl("mainnet-beta"), "confirmed");
 const pythConnection = new PythConnection(

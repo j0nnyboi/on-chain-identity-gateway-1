@@ -1,7 +1,7 @@
 import { createGzip } from "zlib";
 import { PassThrough } from "stream";
 import * as AWS from "aws-sdk";
-import { PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@safecoin/web3.js";
 import { Uploader } from "./index";
 
 const s3 = new AWS.S3();

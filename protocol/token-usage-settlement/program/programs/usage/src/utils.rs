@@ -2,7 +2,7 @@ use {
     crate::ErrorCode,
     anchor_lang::{
         prelude::{AccountInfo, ProgramResult},
-        solana_program::{
+        safecoin_program::{
             program::invoke_signed
         },
     },

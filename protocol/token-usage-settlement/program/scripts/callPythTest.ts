@@ -9,7 +9,7 @@ import {
   setProvider,
   workspace,
 } from "@project-serum/anchor";
-import { clusterApiUrl, Connection, Transaction, TransactionInstruction } from "@solana/web3.js";
+import { clusterApiUrl, Connection, Transaction, TransactionInstruction } from "@safecoin/web3.js";
 import { PythTest } from "../target/types/pyth_test";
 
 const connection = new Connection(clusterApiUrl("devnet"), "confirmed");

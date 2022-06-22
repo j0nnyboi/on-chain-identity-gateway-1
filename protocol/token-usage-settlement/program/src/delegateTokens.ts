@@ -1,6 +1,6 @@
 import { Provider, web3 } from "@project-serum/anchor";
 import { deriveATA, deriveDelegateAndBumpSeed } from "./lib/util";
-import { Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
+import { Token, TOKEN_PROGRAM_ID } from "@safecoin/safe-token";
 
 export type DelegateParams = {
   dappProvider: Provider;

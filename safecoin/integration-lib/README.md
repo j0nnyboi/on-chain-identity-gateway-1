@@ -19,8 +19,8 @@ safecoin-gateway = "<LATEST VERSION>"
 In the instruction processor (typically processor.rs)
 
 ```rust
-use solana_gateway::Gateway;
-use solana_program::{
+use safecoin_gateway::Gateway;
+use safecoin_program::{
     account_info::AccountInfo,
     program_pack::Pack,
     pubkey::Pubkey,

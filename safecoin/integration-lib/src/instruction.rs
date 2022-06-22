@@ -2,14 +2,14 @@
 
 use crate::state::get_expire_address_with_seed;
 use crate::Gateway;
-use solana_program::clock::UnixTimestamp;
+use safecoin_program::clock::UnixTimestamp;
 use {
     crate::state::GatewayTokenState,
     crate::state::{
         get_gatekeeper_address_with_seed, get_gateway_token_address_with_seed, AddressSeed,
     },
     borsh::{BorshDeserialize, BorshSerialize},
-    solana_program::{
+    safecoin_program::{
         instruction::{AccountMeta, Instruction},
         pubkey::Pubkey,
         system_program, sysvar,
@@ -277,7 +277,7 @@ pub fn remove_feature_from_network(
 #[cfg(test)]
 mod tests {
     use super::*;
-    use solana_program::program_error::ProgramError;
+    use safecoin_program::program_error::ProgramError;
 
     #[test]
     fn serialize_issue_vanilla() {

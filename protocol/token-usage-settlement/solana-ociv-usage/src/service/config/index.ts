@@ -2,7 +2,7 @@ import * as os from "os";
 import * as path from "path";
 import * as yaml from "yaml";
 import * as fs from "fs";
-import { Commitment, Connection, PublicKey } from "@solana/web3.js";
+import { Commitment, Connection, PublicKey } from "@safecoin/web3.js";
 import { ExtendedCluster, getConnection } from "../../util/connection";
 
 const DEFAULT_CONFIG_FILE = path.join(

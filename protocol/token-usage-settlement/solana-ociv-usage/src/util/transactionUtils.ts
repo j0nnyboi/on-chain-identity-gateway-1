@@ -4,7 +4,7 @@ import {
   ParsedInstruction,
   PartiallyDecodedInstruction,
   PublicKey,
-} from "@solana/web3.js";
+} from "@safecoin/web3.js";
 import * as R from "ramda";
 import { InstructionConfig, UsageConfig } from "../service/config";
 import * as base58 from "bs58";

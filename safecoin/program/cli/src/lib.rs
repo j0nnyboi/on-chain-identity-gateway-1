@@ -1,14 +1,14 @@
 use clap::Clap;
 use debug_print::debug_println;
 use rand::rngs::OsRng;
-use solana_client::{
+use safecoin_client::{
     rpc_client::RpcClient,
     rpc_config::RpcSendTransactionConfig,
     client_error::ClientError
 };
-use solana_gateway_program::solana_program::program_error::ProgramError;
-use solana_gateway_program::instruction;
-use solana_sdk::{
+use safecoin_gateway_program::safecoin_program::program_error::ProgramError;
+use safecoin_gateway_program::instruction;
+use safecoin_sdk::{
     transaction::Transaction,
     signature::Signature,
     pubkey::Pubkey,

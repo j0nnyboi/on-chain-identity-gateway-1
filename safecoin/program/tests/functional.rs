@@ -1,19 +1,19 @@
 // Mark this test as BPF-only due to current `ProgramTest` limitations when CPIing into the system program
 #![cfg(feature = "test-bpf")]
 
-use solana_gateway::instruction;
-use solana_gateway::instruction::{add_feature_to_network, expire_token, NetworkFeature};
-use solana_gateway::state::{
+use safecoin_gateway::instruction;
+use safecoin_gateway::instruction::{add_feature_to_network, expire_token, NetworkFeature};
+use safecoin_gateway::state::{
     get_gatekeeper_address_with_seed, get_gateway_token_address_with_seed,
 };
-use solana_gateway_program::id;
-use solana_sdk::transaction::Transaction;
+use safecoin_gateway_program::id;
+use safecoin_sdk::transaction::Transaction;
 use {
     crate::gateway_context::GatewayContext,
-    solana_gateway::state::GatewayTokenState,
-    solana_program::pubkey::Pubkey,
-    solana_program_test::tokio,
-    solana_sdk::signature::{Keypair, Signer},
+    safecoin_gateway::state::GatewayTokenState,
+    safecoin_program::pubkey::Pubkey,
+    safecoin_program_test::tokio,
+    safecoin_sdk::signature::{Keypair, Signer},
 };
 
 mod gateway_context;

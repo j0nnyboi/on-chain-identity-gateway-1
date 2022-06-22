@@ -1,6 +1,6 @@
 import {Provider, Wallet} from "@project-serum/anchor";
-import { Connection, Keypair } from "@solana/web3.js";
-import { clusterApiUrl } from "@solana/web3.js";
+import { Connection, Keypair } from "@safecoin/web3.js";
+import { clusterApiUrl } from "@safecoin/web3.js";
 import { draw } from "../src";
 
 const connection = new Connection(clusterApiUrl("devnet"), "confirmed");

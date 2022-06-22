@@ -12,7 +12,7 @@ import {
   MintLayout,
   Token,
   TOKEN_PROGRAM_ID,
-} from "@solana/spl-token";
+} from "@safecoin/safe-token";
 import { Usage } from "../target/types/usage";
 import {
   deriveATA,

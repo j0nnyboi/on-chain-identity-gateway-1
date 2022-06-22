@@ -7,7 +7,7 @@ use std::mem::{size_of, transmute};
 use {
     borsh::{BorshDeserialize, BorshSchema, BorshSerialize},
     sol_did::validate_owner,
-    solana_program::{
+    safecoin_program::{
         account_info::AccountInfo,
         clock::UnixTimestamp,
         entrypoint::ProgramResult,
@@ -618,7 +618,7 @@ pub mod tests {
     use rand::{CryptoRng, Rng, RngCore, SeedableRng};
     use rand_chacha::ChaCha20Rng;
     use sol_did::state::{SolData, VerificationMethod};
-    use solana_sdk::signature::{Keypair, Signer};
+    use safecoin_sdk::signature::{Keypair, Signer};
     use std::iter::FusedIterator;
     use std::{cell::RefCell, rc::Rc};
 

@@ -1,6 +1,6 @@
 import { describe } from "mocha";
 import { expect } from "chai";
-import { Keypair, PublicKey } from "@solana/web3.js";
+import { Keypair, PublicKey } from "@safecoin/web3.js";
 import { getConnection, UsageOracleService } from "../../../src";
 
 describe("UsageOracleService", function () {

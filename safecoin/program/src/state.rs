@@ -1,5 +1,5 @@
 //! Program state
-use solana_gateway::state::{GatewayToken, GatewayTokenState};
+use safecoin_gateway::state::{GatewayToken, GatewayTokenState};
 
 /// Defines an object that has a state, that can be transitioned
 pub trait Transitionable<State> {

@@ -1,4 +1,4 @@
-use solana_program::pubkey::Pubkey;
+use safecoin_program::pubkey::Pubkey;
 
 /// A cached gatekeeper network for optimizing CPI calls
 pub struct GatewayNetwork {

@@ -5,7 +5,7 @@ import {
   deriveUsageAccount,
   fetchProgram,
 } from "./lib/util";
-import { TOKEN_PROGRAM_ID } from "@solana/spl-token";
+import { TOKEN_PROGRAM_ID } from "@safecoin/safe-token";
 import { UsageRecord } from "./usage";
 import { Usage } from "../target/types/usage";
 
