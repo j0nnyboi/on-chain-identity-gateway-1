@@ -13,7 +13,7 @@ This library then validates that gateway tokens are issued by gatekeepers in thi
 
 In Cargo.toml
 ```toml
-safecoin-gateway = "<LATEST VERSION>"
+solana-gateway = "<LATEST VERSION>"
 ```
 
 In the instruction processor (typically processor.rs)

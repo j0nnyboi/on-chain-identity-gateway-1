@@ -10,7 +10,7 @@ on:
       - '.github/**'
   pull_request:
 jobs:
-  safecoin-gateway-program-lint:
+  solana-gateway-program-lint:
     name: Lint the solana rust code on ${{ matrix.rust }} and ${{ matrix.os }}
 
     runs-on: ${{ matrix.os }}
@@ -50,7 +50,7 @@ jobs:
           command: clippy
           args: --tests --features test-bpf --manifest-path solana/Cargo.toml -- --deny=warnings
 
-  safecoin-gateway-program-build:
+  solana-gateway-program-build:
     name: Build and test the solana rust code on Solana ${{ matrix.solana }}, Rust ${{ matrix.rust }} and ${{ matrix.os }}
 
     runs-on: ${{ matrix.os }}

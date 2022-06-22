@@ -19,15 +19,15 @@ no-entrypoint = []
 
 [dependencies]
 borsh = "0.9.1"
-safecoin-program = { path = "../../../Safecoin/sdk/program" }
-safe-did = { path = "../../../safe-did-0.2.0" , features = [ "no-entrypoint" ]}
+safecoin-program = "1.9.0"
+safe-did = { version = "0.2.0", features = [ "no-entrypoint" ]}
 num-derive = "0.3"
 num-traits = "0.2.12"
 thiserror = "1.0.20"
 bitflags = "1.3.2"
 
 [dev-dependencies]
-safecoin-sdk = { path = "../../../Safecoin/sdk" }
+safecoin-sdk = "1.9.0"
 # These are older as solana sdk relies on rand_core 0.5.1
 rand = "0.7.3"
 rand_chacha = "0.2.2"

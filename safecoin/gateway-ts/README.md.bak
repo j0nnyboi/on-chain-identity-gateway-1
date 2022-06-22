@@ -19,7 +19,7 @@ like gateway token retrieval, lookup, and revocation.
 ## Usage
 ### Installation
 ```
-yarn add @identity.com/safecoin-gateway-ts
+yarn add @identity.com/solana-gateway-ts
 ```
 ### Import
 ```
@@ -29,7 +29,7 @@ import {
   getGatewayTokenKeyForOwner,
   issueVanilla,
   findGatewayTokens,
-} from "@identity.com/safecoin-gateway-ts";
+} from "@identity.com/solana-gateway-ts";
 ```
 
 ## Functions
